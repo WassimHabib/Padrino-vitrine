@@ -4,6 +4,8 @@
 
 Modernization of the existing Padrino pizzeria website (lepadrino.fr) from a static HTML/Bootstrap/jQuery site to a modern, animated, user-friendly site. The site serves 5 locations in Ile-de-France (Le Blanc-Mesnil, Villepinte, Drancy, Aulnay-sous-Bois, Sevran).
 
+**Note:** Le Blanc-Mesnil is the main/home location served by `index.html`. The 4 other locations each have a dedicated page.
+
 **Critical constraint:** Preserve all existing Google SEO rankings and indexed pages.
 
 **Design inspiration:** [Pizza Cosy](https://www.pizzacosy.fr/) — clear navigation, product grids, visible CTAs. Adapted with a fun/energetic street food style and dynamic pizza animations.
@@ -34,7 +36,7 @@ padrino-site-vitrine/
 │   ├── pizzeria-villepinte.html
 │   ├── pizzeria-drancy.html
 │   ├── pizzeria-aulnay-sous-bois.html
-│   ├── pizzeria-Sevran.html
+│   ├── pizzeria-Sevran.html      # Capital "S" intentional — matches existing production URL
 │   ├── robots.txt
 │   ├── sitemap.xml
 │   ├── css/
@@ -44,7 +46,7 @@ padrino-site-vitrine/
 │   │   └── animations.js        # All GSAP animations
 │   ├── img/                     # Images (reused + optimized)
 │   ├── fonts/                   # Custom fonts (KGHAPPY, Appleberry)
-│   └── fav/                     # Favicons and PWA assets
+│   └── fav/                     # Favicons, manifest.json, and PWA assets
 ├── tailwind.config.js
 └── package.json                 # Tailwind CLI + GSAP
 ```
@@ -82,7 +84,7 @@ padrino-site-vitrine/
 - `<title>` and `<meta name="description">` per page
 - `<meta name="keywords">` per page
 - Schema.org BreadcrumbList (JSON-LD)
-- `sitemap.xml` (with updated `lastmod` dates)
+- `sitemap.xml` (structure preserved, `lastmod` dates updated)
 - `robots.txt`
 - `manifest.json` and all favicon assets
 - GTM + GA4 scripts in `<head>`
@@ -94,6 +96,8 @@ padrino-site-vitrine/
 - Add Open Graph tags (`og:title`, `og:description`, `og:image`) for social sharing
 - Replace hidden `.notVisible` div content with visible, well-designed content integrated into the layout (reduces risk of Google flagging as keyword stuffing)
 - Update `lastmod` dates in sitemap
+- Add missing pages to sitemap (location pages, offres, commande, mention-legale — currently only 7 URLs are listed)
+- Update sitemap URLs to use `https://` protocol (currently `http://`)
 - Add Schema.org `Restaurant` and `LocalBusiness` structured data for each location page
 
 ### Per-Page Verification
@@ -139,13 +143,13 @@ Red and green are the two dominant colors (matching the logo). Orange and yellow
 ### CTAs
 
 - "Commander" button: red, rounded, always visible
-- "Appeler" button: green, secondary
+- "Appeler" button: green, secondary — opens a modal to choose between Le Blanc-Mesnil and Villepinte phone numbers (same behavior as current site)
 - Mobile: fixed bottom bar with both buttons (same as current site)
 
 ### Footer
 
 - Dark brown/black background
-- 5 location addresses with phone numbers
+- 2 physical location addresses with phone numbers (Le Blanc-Mesnil + Villepinte) + 3 delivery zones (Drancy, Aulnay, Sevran)
 - Opening hours, useful links, social media
 - Delivery platform logos (JustEat, Deliveroo, Uber Eats)
 
@@ -170,6 +174,7 @@ Red and green are the two dominant colors (matching the logo). Orange and yellow
 
 - Small pizza slices drifting slowly in background
 - Basil leaves, tomatoes, mushrooms floating gently
+- These decorative assets need to be created (SVG illustrations or transparent PNG) — they don't exist in the old site
 - Positioned absolute, SVG or transparent PNG
 - Subtle opacity (0.15-0.3) to not interfere with content
 - Max 5-8 elements per page on desktop, 3 on mobile
@@ -207,7 +212,8 @@ Red and green are the two dominant colors (matching the logo). Orange and yellow
 4. Mobile app promo banner + promo code BIENV10
 5. About section (fast-casual concept)
 6. Customer testimonials
-7. "Our restaurants" section with 5 locations
+7. Reservations section — click-to-call buttons for both locations
+8. "Our restaurants" section with 5 locations
 
 ### Menu Pages (pizza.html, pasta.html, texmex.html, salades.html, dessert.html)
 
@@ -220,14 +226,14 @@ Red and green are the two dominant colors (matching the logo). Orange and yellow
 
 1. Title banner with city name
 2. Address, phone, hours
-3. Embedded Google Maps
+3. Google Maps direction link / "Itineraire" button (matching current site behavior)
 4. Summary menu / links to full menus
 5. Location-specific order CTA
 
 ### Utility Pages
 
 - offres.html: Current promotions grid
-- commande.html: Dishop redirect/integration
+- commande.html: Full page with prominent links/buttons to Dishop ordering platform (not a redirect)
 - mention-legale.html: Legal content, minimal design
 
 ---
