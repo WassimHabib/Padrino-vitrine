@@ -1,0 +1,11 @@
+{
+  "name": "padrino-site-vitrine",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./Padrino/css/input.css -o ./Padrino/css/output.css --watch",
+    "build": "npx tailwindcss -i ./Padrino/css/input.css -o ./Padrino/css/output.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4"
+  }
+}

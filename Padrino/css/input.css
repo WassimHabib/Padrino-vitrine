@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'KGHAPPY';
+  src: url('../fonts/KGHAPPY.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Appleberry';
+  src: url('../fonts/appleberry.ttf') format('truetype');
+  font-display: swap;
+}
+
+@layer base {
+  body {
+    @apply font-body bg-padrino-cream text-padrino-brown;
+  }
+  h1, h2, h3 {
+    @apply font-kghappy;
+  }
+}
+
+@layer components {
+  .btn-commander {
+    @apply bg-padrino-red text-white font-bold py-3 px-6 rounded-full
+           hover:bg-padrino-orange hover:scale-105 transition-all duration-300;
+  }
+  .btn-appeler {
+    @apply bg-padrino-green text-white font-bold py-3 px-6 rounded-full
+           hover:bg-green-600 hover:scale-105 transition-all duration-300;
+  }
+  .product-card {
+    @apply bg-white rounded-2xl shadow-md overflow-hidden
+           hover:shadow-xl transition-all duration-300;
+  }
+}
