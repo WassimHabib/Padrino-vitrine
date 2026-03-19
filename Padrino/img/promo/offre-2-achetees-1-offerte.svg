@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 200" fill="none">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="500" y2="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ed1c24"/>
+      <stop offset="100%" stop-color="#b71c1c"/>
+    </linearGradient>
+    <linearGradient id="gold2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffc107"/>
+      <stop offset="100%" stop-color="#ffeb3b"/>
+    </linearGradient>
+    <linearGradient id="dark2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a1a1a"/>
+      <stop offset="100%" stop-color="#2d0a0a"/>
+    </linearGradient>
+  </defs>
+  <rect width="500" height="200" rx="16" fill="url(#bg2)"/>
+  <circle cx="450" cy="30" r="70" fill="white" opacity="0.05"/>
+  <!-- Badge -->
+  <rect x="12" y="10" width="140" height="26" rx="13" fill="url(#dark2)"/>
+  <text x="82" y="28" text-anchor="middle" fill="white" font-family="Arial,sans-serif" font-weight="bold" font-size="11" letter-spacing="1.5">EN LIVRAISON</text>
+  <!-- Line 1: 2 PIZZAS ACHETÉES -->
+  <text x="50" y="95" text-anchor="middle" fill="url(#gold2)" font-family="Arial Black,sans-serif" font-weight="900" font-size="60">2</text>
+  <text x="85" y="78" text-anchor="start" fill="white" font-family="Arial,sans-serif" font-weight="700" font-size="22">PIZZAS</text>
+  <text x="85" y="100" text-anchor="start" fill="white" font-family="Arial,sans-serif" font-weight="300" font-size="18">ACHETÉES</text>
+  <!-- = -->
+  <rect x="240" y="68" width="40" height="40" rx="20" fill="url(#dark2)"/>
+  <text x="260" y="95" text-anchor="middle" fill="url(#gold2)" font-family="Arial Black,sans-serif" font-weight="900" font-size="22">=</text>
+  <!-- Line 2: 1 PIZZA OFFERTE -->
+  <text x="320" y="95" text-anchor="middle" fill="url(#gold2)" font-family="Arial Black,sans-serif" font-weight="900" font-size="60">1</text>
+  <text x="350" y="78" text-anchor="start" fill="white" font-family="Arial,sans-serif" font-weight="700" font-size="16">PIZZA</text>
+  <text x="350" y="102" text-anchor="start" fill="url(#gold2)" font-family="Arial Black,sans-serif" font-weight="900" font-size="24">OFFERTE!</text>
+  <!-- Bottom -->
+  <line x1="30" y1="130" x2="470" y2="130" stroke="white" stroke-width="1.5" opacity="0.2"/>
+  <text x="250" y="155" text-anchor="middle" fill="white" font-family="Arial,sans-serif" font-weight="500" font-size="11" opacity="0.8">Sur tarif = ou inférieur à celle achetée</text>
+  <rect x="150" y="165" width="200" height="26" rx="13" fill="url(#dark2)"/>
+  <text x="250" y="183" text-anchor="middle" fill="white" font-family="Arial,sans-serif" font-weight="700" font-size="12">COMMANDER MAINTENANT</text>
+  <!-- Deco -->
+  <g transform="translate(460,50) rotate(20)" opacity="0.1">
+    <path d="M0 -25 L20 20 Q0 22 -20 20 Z" fill="#ffc107"/>
+    <circle cx="-5" cy="2" r="3" fill="#fff"/>
+    <circle cx="6" cy="-2" r="2.5" fill="#fff"/>
+  </g>
+  <circle cx="430" cy="160" r="2" fill="#ffc107" opacity="0.5"/>
+  <circle cx="450" cy="145" r="1.5" fill="#ffc107" opacity="0.4"/>
+</svg>

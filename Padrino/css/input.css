@@ -15,6 +15,9 @@
 }
 
 @layer base {
+  html, body {
+    @apply overflow-x-hidden;
+  }
   body {
     @apply font-body bg-padrino-cream text-padrino-brown;
   }

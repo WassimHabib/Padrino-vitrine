@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Priority 1.00 -->
+  <url><loc>https://www.lepadrino.fr/</loc><lastmod>2026-03-18</lastmod><priority>1.00</priority></url>
+  <!-- Priority 0.80 - menu pages -->
+  <url><loc>https://www.lepadrino.fr/pizza.html</loc><lastmod>2026-03-18</lastmod><priority>0.80</priority></url>
+  <url><loc>https://www.lepadrino.fr/pasta.html</loc><lastmod>2026-03-18</lastmod><priority>0.80</priority></url>
+  <url><loc>https://www.lepadrino.fr/texmex.html</loc><lastmod>2026-03-18</lastmod><priority>0.80</priority></url>
+  <url><loc>https://www.lepadrino.fr/salades.html</loc><lastmod>2026-03-18</lastmod><priority>0.80</priority></url>
+  <url><loc>https://www.lepadrino.fr/dessert.html</loc><lastmod>2026-03-18</lastmod><priority>0.80</priority></url>
+  <url><loc>https://www.lepadrino.fr/menu.html</loc><lastmod>2026-03-18</lastmod><priority>0.90</priority></url>
+  <!-- Priority 0.60 -->
+  <url><loc>https://www.lepadrino.fr/offres.html</loc><lastmod>2026-03-18</lastmod><priority>0.60</priority></url>
+  <url><loc>https://www.lepadrino.fr/commande.html</loc><lastmod>2026-03-18</lastmod><priority>0.60</priority></url>
+  <url><loc>https://www.lepadrino.fr/pizzeria-villepinte.html</loc><lastmod>2026-03-18</lastmod><priority>0.60</priority></url>
+  <url><loc>https://www.lepadrino.fr/pizzeria-drancy.html</loc><lastmod>2026-03-18</lastmod><priority>0.60</priority></url>
+  <url><loc>https://www.lepadrino.fr/pizzeria-aulnay-sous-bois.html</loc><lastmod>2026-03-18</lastmod><priority>0.60</priority></url>
+  <url><loc>https://www.lepadrino.fr/pizzeria-Sevran.html</loc><lastmod>2026-03-18</lastmod><priority>0.60</priority></url>
+  <url><loc>https://www.lepadrino.fr/pizzeria-dugny.html</loc><lastmod>2026-03-19</lastmod><priority>0.60</priority></url>
+  <url><loc>https://www.lepadrino.fr/pizzeria-le-bourget.html</loc><lastmod>2026-03-19</lastmod><priority>0.60</priority></url>
+  <url><loc>https://www.lepadrino.fr/faq.html</loc><lastmod>2026-03-19</lastmod><priority>0.70</priority></url>
+  <!-- Priority 0.30 -->
+  <url><loc>https://www.lepadrino.fr/mention-legale.html</loc><lastmod>2026-03-18</lastmod><priority>0.30</priority></url>
+</urlset>
