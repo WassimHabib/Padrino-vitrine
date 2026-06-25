@@ -88,9 +88,51 @@
         ],
         "telephone": "+33143836407",
         "openingHours": "Mo-Su 11:30-15:00, 18:00-23:00",
-        "servesCuisine": ["Pizza", "Italian", "Halal"],
+        "servesCuisine": [
+            "Pizza",
+            "Italian",
+            "Halal",
+            "Pasta",
+            "Tex-Mex",
+            "Salads",
+            "Desserts"
+        ],
         "priceRange": "€€",
-        "hasMap": "https://www.google.com/maps/place//data=!4m2!3m1!1s0x47e615f61501809f:0xa06b40b91266c091"
+        "hasMap": "https://www.google.com/maps/place//data=!4m2!3m1!1s0x47e615f61501809f:0xa06b40b91266c091",
+        "@id": "https://www.lepadrino.fr/pizzeria-villepinte.html#restaurant",
+        "parentOrganization": {
+            "@id": "https://www.lepadrino.fr/#organization"
+        },
+        "logo": "https://www.lepadrino.fr/img/about/logo-padrino.png",
+        "currenciesAccepted": "EUR",
+        "paymentAccepted": "Espèces, Carte bancaire",
+        "sameAs": [
+            "https://lepadrino.dishop.co/",
+            "https://play.google.com/store/apps/details?id=com.dishop.lepadrino"
+        ],
+        "menu": "https://www.lepadrino.fr/menu.html",
+        "hasMenu": {
+            "@type": "Menu",
+            "url": "https://www.lepadrino.fr/menu.html"
+        },
+        "acceptsReservations": "True",
+        "potentialAction": {
+            "@type": "OrderAction",
+            "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://lepadrino.dishop.co/",
+                "inLanguage": "fr",
+                "actionPlatform": [
+                    "http://schema.org/DesktopWebPlatform",
+                    "http://schema.org/MobileWebPlatform",
+                    "http://schema.org/AndroidPlatform"
+                ]
+            },
+            "deliveryMethod": [
+                "http://purl.org/goodrelations/v1#DeliveryModeOwnFleet",
+                "http://purl.org/goodrelations/v1#DeliveryModePickUp"
+            ]
+        }
     }
     </script>
 

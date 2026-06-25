@@ -109,13 +109,73 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "Restaurant",
-        "name": "Padrino Pizza",
+        "@type": "Organization",
+        "@id": "https://www.lepadrino.fr/#organization",
+        "name": "Le Padrino",
+        "alternateName": "Padrino Pizza",
+        "url": "https://www.lepadrino.fr/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.lepadrino.fr/img/about/logo-padrino.png"
+        },
         "image": "https://www.lepadrino.fr/img/about/Padrino-pizzeria.jpg",
+        "telephone": ["+33145912593", "+33143836407"],
+        "sameAs": [
+            "https://lepadrino.dishop.co/",
+            "https://play.google.com/store/apps/details?id=com.dishop.lepadrino"
+        ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "@id": "https://www.lepadrino.fr/#restaurant",
+        "name": "Padrino Pizza",
+        "description": "Pizzeria halal au Blanc-Mesnil et à Villepinte. Pizzas, pâtes, tex-mex, salades et desserts, à emporter et en livraison à domicile, 7j/7.",
+        "parentOrganization": { "@id": "https://www.lepadrino.fr/#organization" },
+        "logo": "https://www.lepadrino.fr/img/about/logo-padrino.png",
+        "image": [
+            "https://www.lepadrino.fr/img/about/Padrino-pizzeria.jpg",
+            "https://www.lepadrino.fr/img/about/logo-padrino.png"
+        ],
         "url": "https://www.lepadrino.fr/",
         "telephone": ["+33145912593", "+33143836407"],
-        "servesCuisine": ["Pizza", "Pasta", "Italian", "Halal"],
+        "servesCuisine": ["Pizza", "Pasta", "Italian", "Tex-Mex", "Salads", "Desserts", "Halal"],
         "priceRange": "€€",
+        "currenciesAccepted": "EUR",
+        "paymentAccepted": "Espèces, Carte bancaire",
+        "areaServed": [
+            { "@type": "City", "name": "Le Blanc-Mesnil" },
+            { "@type": "City", "name": "Drancy" },
+            { "@type": "City", "name": "Aulnay-sous-Bois" },
+            { "@type": "City", "name": "Villepinte" },
+            { "@type": "City", "name": "Sevran" },
+            { "@type": "City", "name": "Dugny" },
+            { "@type": "City", "name": "Le Bourget" },
+            { "@type": "City", "name": "Tremblay-en-France" }
+        ],
+        "sameAs": [
+            "https://lepadrino.dishop.co/",
+            "https://play.google.com/store/apps/details?id=com.dishop.lepadrino"
+        ],
+        "potentialAction": {
+            "@type": "OrderAction",
+            "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://lepadrino.dishop.co/",
+                "inLanguage": "fr",
+                "actionPlatform": [
+                    "http://schema.org/DesktopWebPlatform",
+                    "http://schema.org/MobileWebPlatform",
+                    "http://schema.org/AndroidPlatform"
+                ]
+            },
+            "deliveryMethod": [
+                "http://purl.org/goodrelations/v1#DeliveryModeOwnFleet",
+                "http://purl.org/goodrelations/v1#DeliveryModePickUp"
+            ]
+        },
         "openingHoursSpecification": [
             {
                 "@type": "OpeningHoursSpecification",
