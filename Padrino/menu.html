@@ -8,6 +8,8 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-TLC6SN4');</script>
     <!-- End Google Tag Manager -->
+    <!-- Umami Analytics -->
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="93cb842f-0b42-454d-b1b0-7389b0b291f0"></script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-PMLY65YTLL"></script>
     <script>
@@ -21,6 +23,7 @@
     <title>Notre Carte - Padrino Pizza Le Blanc-Mesnil & Villepinte</title>
     <meta name="description" content="Découvrez toute la carte Padrino : pizzas, pastas, paninis, tex-mex, salades, gratins, desserts et boissons. Livraison à domicile et à emporter au Blanc-Mesnil, Drancy, Aulnay-sous-Bois, Villepinte.">
     <meta name="keywords" content="menu padrino, carte padrino, pizza blanc-mesnil, pasta, panini, tex-mex, salade, gratin, dessert, livraison pizza, pizzeria halal">
+    <link rel="alternate" hreflang="en" href="https://www.lepadrino.fr/en/menu.html">
     <link rel="alternate" hreflang="fr" href="https://www.lepadrino.fr/menu.html">
     <link rel="canonical" href="https://www.lepadrino.fr/menu.html">
     <meta property="og:title" content="Notre Carte - Padrino Pizza">
@@ -50,7 +53,7 @@
     <!-- Fonts & Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <!-- GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
@@ -83,9 +86,9 @@
         <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-20">
             <a href="index.html" class="flex-shrink-0">
                 <picture>
-                    <source srcset="img/about/logo-bw.webp" type="image/webp">
-                    <source srcset="img/about/logo-bw.png" type="image/png">
-                    <img src="img/about/logo-bw.png" class="h-16" alt="Pizzeria Le blanc Mesnil commandez vos Pizza le blanc mesnil">
+                    <source srcset="img/about/logo-padrino-sm.webp" type="image/webp">
+                    <source srcset="img/about/logo-padrino-sm.png" type="image/png">
+                    <img src="img/about/logo-padrino-sm.png" class="h-16" alt="Pizzeria Le blanc Mesnil commandez vos Pizza le blanc mesnil">
                 </picture>
             </a>
             <nav class="hidden lg:flex items-center gap-6">
@@ -109,7 +112,7 @@
     </header>
 
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="fixed inset-0 z-40 pointer-events-none">
+    <div id="mobile-menu" class="fixed inset-0 z-[55] pointer-events-none">
         <div id="mobile-backdrop" class="absolute inset-0 bg-black/50 opacity-0 transition-opacity duration-300"></div>
         <div id="mobile-panel" class="absolute right-0 top-0 h-full w-72 bg-white shadow-2xl translate-x-full transition-transform duration-300 flex flex-col pt-24 px-6 gap-4">
             <a href="index.html" class="text-lg font-medium py-2 border-b border-gray-100 hover:text-padrino-red">Accueil</a>
@@ -144,9 +147,9 @@
     </section>
 
     <!-- Sticky Category Tabs -->
-    <nav id="menu-tabs" class="sticky top-20 z-30 bg-white shadow-md">
-        <div class="max-w-7xl mx-auto overflow-x-auto scrollbar-hide">
-            <div class="flex whitespace-nowrap px-4 py-3 gap-2 min-w-max">
+    <nav id="menu-tabs" class="sticky top-20 z-30 bg-white shadow-md overflow-hidden">
+        <div class="overflow-x-auto" style="-webkit-overflow-scrolling:touch">
+            <div class="flex whitespace-nowrap px-4 py-3 gap-2">
                 <a href="#pizzas-tomate" class="menu-tab-link bg-padrino-red text-white px-4 py-2 rounded-full text-sm font-semibold transition-all duration-200">Pizzas Tomate</a>
                 <a href="#pizzas-creme" class="menu-tab-link bg-gray-100 text-padrino-brown px-4 py-2 rounded-full text-sm font-semibold transition-all duration-200 hover:bg-padrino-red hover:text-white">Pizzas Crème</a>
                 <a href="#pizzas-speciale" class="menu-tab-link bg-gray-100 text-padrino-brown px-4 py-2 rounded-full text-sm font-semibold transition-all duration-200 hover:bg-padrino-red hover:text-white">Pizzas Spéciale</a>
@@ -166,7 +169,7 @@
 
         <!-- ===================== PIZZAS SAUCE TOMATE ===================== -->
         <section id="pizzas-tomate" class="mb-16 scroll-mt-40">
-            <div class="bg-padrino-red py-4 px-6 rounded-xl shadow-lg mb-10 text-center">
+            <div class="bg-padrino-red py-4 px-6 rounded-xl shadow-lg mb-6 text-center">
                 <h2 class="font-kghappy text-white text-xl md:text-2xl py-1">Pizzas — Base Sauce Tomate</h2>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
@@ -188,7 +191,7 @@
 
         <!-- ===================== PIZZAS CRÈME FRAÎCHE ===================== -->
         <section id="pizzas-creme" class="mb-16 scroll-mt-40">
-            <div class="bg-padrino-brown py-4 px-6 rounded-xl shadow-lg mb-10 text-center">
+            <div class="bg-padrino-brown py-4 px-6 rounded-xl shadow-lg mb-6 text-center">
                 <h2 class="font-kghappy text-padrino-yellow text-xl md:text-2xl py-1">Pizzas — Base Crème Fraîche</h2>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
@@ -209,7 +212,7 @@
 
         <!-- ===================== PIZZAS BASE SPÉCIALE ===================== -->
         <section id="pizzas-speciale" class="mb-16 scroll-mt-40">
-            <div class="bg-padrino-green py-4 px-6 rounded-xl shadow-lg mb-10 text-center">
+            <div class="bg-padrino-green py-4 px-6 rounded-xl shadow-lg mb-6 text-center">
                 <h2 class="font-kghappy text-white text-xl md:text-2xl py-1">Pizzas — Base Spéciale</h2>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
@@ -234,9 +237,40 @@
             </div>
         </section>
 
+        <!-- Upsell Supplements -->
+        <section class="mb-10 scroll-mt-40 bg-padrino-dark rounded-2xl p-5">
+            <h2 class="text-lg md:text-xl text-center mb-4 text-padrino-yellow">Personnalisez votre pizza</h2>
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="bg-white rounded-xl p-4 text-center shadow-sm hover:shadow-md transition-shadow">
+                    <span class="text-3xl">🧀</span>
+                    <h3 class="text-sm mt-2 mb-1">Croûte Fromage</h3>
+                    <p class="text-xs text-padrino-red font-bold">2€ / 3€ / 4€</p>
+                    <p class="text-[10px] text-gray-400 mt-1">Junior / Senior / Méga</p>
+                </div>
+                <div class="bg-white rounded-xl p-4 text-center shadow-sm hover:shadow-md transition-shadow">
+                    <span class="text-3xl">🤍</span>
+                    <h3 class="text-sm mt-2 mb-1">+ Burrata</h3>
+                    <p class="text-xs text-padrino-red font-bold">+4€</p>
+                    <p class="text-[10px] text-padrino-red mt-1"><i class="fa-solid fa-star"></i> Recommandé</p>
+                </div>
+                <div class="bg-white rounded-xl p-4 text-center shadow-sm hover:shadow-md transition-shadow">
+                    <span class="text-3xl">🍞</span>
+                    <h3 class="text-sm mt-2 mb-1">Pâte Épaisse</h3>
+                    <p class="text-xs text-padrino-red font-bold">1€ / 1,50€</p>
+                    <p class="text-[10px] text-gray-400 mt-1">Junior / Senior</p>
+                </div>
+                <div class="bg-white rounded-xl p-4 text-center shadow-sm hover:shadow-md transition-shadow">
+                    <span class="text-3xl">🍫</span>
+                    <h3 class="text-sm mt-2 mb-1">Pizza Nutella</h3>
+                    <p class="text-xs text-padrino-red font-bold">6,90€ / 8,90€</p>
+                    <p class="text-[10px] text-gray-400 mt-1">Junior / Senior</p>
+                </div>
+            </div>
+        </section>
+
         <!-- ===================== PASTAS ===================== -->
         <section id="pastas" class="mb-16 scroll-mt-40">
-            <div class="bg-padrino-orange py-4 px-6 rounded-xl shadow-lg mb-10 text-center">
+            <div class="bg-padrino-orange py-4 px-6 rounded-xl shadow-lg mb-6 text-center">
                 <h2 class="font-kghappy text-white text-xl md:text-2xl py-1">Nos Pastas</h2>
             </div>
             <div class="bg-padrino-dark rounded-2xl p-6 mb-8 text-center text-white">
@@ -253,7 +287,7 @@
 
         <!-- ===================== PANINIS ===================== -->
         <section id="paninis" class="mb-16 scroll-mt-40">
-            <div class="bg-padrino-orange py-4 px-6 rounded-xl shadow-lg mb-10 text-center">
+            <div class="bg-padrino-orange py-4 px-6 rounded-xl shadow-lg mb-6 text-center">
                 <h2 class="font-kghappy text-white text-xl md:text-2xl py-1">Nos Paninis</h2>
             </div>
             <div class="bg-padrino-dark rounded-2xl p-6 mb-8 text-center text-white">
@@ -272,7 +306,7 @@
 
         <!-- ===================== TEX-MEX ===================== -->
         <section id="texmex" class="mb-16 scroll-mt-40">
-            <div class="bg-padrino-yellow py-4 px-6 rounded-xl shadow-lg mb-10 text-center">
+            <div class="bg-padrino-yellow py-4 px-6 rounded-xl shadow-lg mb-6 text-center">
                 <h2 class="font-kghappy text-padrino-dark text-xl md:text-2xl py-1">Tex-Mex</h2>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -287,7 +321,7 @@
 
         <!-- ===================== SALADES ===================== -->
         <section id="salades" class="mb-16 scroll-mt-40">
-            <div class="bg-padrino-green py-4 px-6 rounded-xl shadow-lg mb-10 text-center">
+            <div class="bg-padrino-green py-4 px-6 rounded-xl shadow-lg mb-6 text-center">
                 <h2 class="font-kghappy text-white text-xl md:text-2xl py-1">Salades</h2>
             </div>
             <div class="bg-padrino-dark rounded-2xl p-6 mb-8 text-center text-white">
@@ -310,7 +344,7 @@
 
         <!-- ===================== GRATINS ===================== -->
         <section id="gratins" class="mb-16 scroll-mt-40">
-            <div class="bg-padrino-brown py-4 px-6 rounded-xl shadow-lg mb-10 text-center">
+            <div class="bg-padrino-brown py-4 px-6 rounded-xl shadow-lg mb-6 text-center">
                 <h2 class="font-kghappy text-padrino-yellow text-xl md:text-2xl py-1">Gratins Dauphinois</h2>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -325,7 +359,7 @@
 
         <!-- ===================== DESSERTS ===================== -->
         <section id="desserts" class="mb-16 scroll-mt-40">
-            <div class="bg-padrino-red py-4 px-6 rounded-xl shadow-lg mb-10 text-center">
+            <div class="bg-padrino-red py-4 px-6 rounded-xl shadow-lg mb-6 text-center">
                 <h2 class="font-kghappy text-white text-xl md:text-2xl py-1">Desserts</h2>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -339,7 +373,7 @@
 
         <!-- ===================== BOISSONS ===================== -->
         <section id="boissons" class="mb-16 scroll-mt-40">
-            <div class="bg-padrino-dark py-4 px-6 rounded-xl shadow-lg mb-10 text-center">
+            <div class="bg-padrino-dark py-4 px-6 rounded-xl shadow-lg mb-6 text-center">
                 <h2 class="font-kghappy text-white text-xl md:text-2xl py-1">Boissons</h2>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -354,7 +388,7 @@
     <!-- CTA Banner -->
     <section class="bg-padrino-dark py-8 px-4 text-center">
         <h2 class="font-kghappy text-white text-2xl md:text-3xl mb-3">Vous avez faim ?</h2>
-        <p class="text-white/80 mb-10 text-lg">Commandez en ligne, livraison rapide ou à emporter</p>
+        <p class="text-white/80 mb-6 text-lg">Commandez en ligne, livraison rapide ou à emporter</p>
         <a href="https://lepadrino.dishop.co/" class="bg-white text-padrino-red font-bold py-4 px-10 rounded-full text-lg hover:bg-padrino-yellow hover:text-padrino-dark transition-all duration-300 inline-flex items-center gap-3">
             Commander maintenant <img loading="lazy" src="img/banner/fast-delivery.png" class="h-6" alt="">
         </a>
@@ -363,9 +397,9 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-padrino-dark text-white pt-16 pb-8 px-4">
+    <footer class="bg-padrino-dark text-white pt-8 pb-6 px-4">
         <div class="max-w-6xl mx-auto">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 text-center md:text-left">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center md:text-left">
                 <div>
                     <h3 class="font-kghappy text-xl mb-4">Le Blanc Mesnil</h3>
                     <p class="text-white/70 text-sm leading-relaxed">2 Rue du Professeur Paul Langevin<br>93150 Le Blanc-Mesnil<br>France</p>
@@ -400,7 +434,7 @@
                     </div>
                 </div>
             </div>
-            <div class="border-t border-white/10 mt-12 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="border-t border-white/10 mt-8 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
                 <p class="text-white/50 text-sm">©2024 Padrino | Tous droits réservés</p>
                 <a href="mention-legale.html" class="text-white/50 text-sm hover:text-white transition-colors">Mentions légales</a>
             </div>
@@ -414,7 +448,6 @@
     </div>
 
     <!-- Floating Decorative Elements Container -->
-    <div id="floating-elements" class="fixed inset-0 pointer-events-none z-0 overflow-hidden" aria-hidden="true"></div>
 
     <!-- Scripts -->
     <script src="js/main.js" defer></script>
@@ -461,8 +494,14 @@
             if (active) {
                 active.tab.classList.remove('bg-gray-100', 'text-padrino-brown');
                 active.tab.classList.add('bg-padrino-red', 'text-white');
-                // Auto-scroll tabs bar to keep active visible
-                active.tab.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+                // Auto-scroll tabs bar only (not the page)
+                var tabsContainer = document.querySelector('#menu-tabs .overflow-x-auto');
+                if (tabsContainer) {
+                    var tabLeft = active.tab.offsetLeft;
+                    var tabWidth = active.tab.offsetWidth;
+                    var containerWidth = tabsContainer.offsetWidth;
+                    tabsContainer.scrollTo({ left: tabLeft - containerWidth / 2 + tabWidth / 2, behavior: 'smooth' });
+                }
             }
         }
 
@@ -472,6 +511,7 @@
     </script>
     <script src="js/offre-horaire.js" defer></script>
     <script src="js/promo-popup.js" defer></script>
+    <script src="js/lang-switcher.js" defer></script>
     <script src="js/chatbot.js" defer></script>
 </body>
 </html>

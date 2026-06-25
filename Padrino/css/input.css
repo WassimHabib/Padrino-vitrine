@@ -15,14 +15,21 @@
 }
 
 @layer base {
-  html, body {
-    @apply overflow-x-hidden;
+  html {
+    overflow-x: hidden;
+    width: 100%;
+  }
+  body {
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
   }
   body {
     @apply font-body bg-padrino-cream text-padrino-brown;
   }
   h1, h2, h3 {
-    @apply font-kghappy;
+    font-family: 'Montserrat', sans-serif;
+    @apply font-bold uppercase;
   }
 }
 

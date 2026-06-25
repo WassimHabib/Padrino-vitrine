@@ -24,6 +24,13 @@
       gsap.from(logo, { rotation: -10, opacity: 0, duration: 0.8, ease: 'back.out(1.7)' });
     }
 
+    // --- Hero Pizza Animation ---
+    var mascotte = document.getElementById('mascotte');
+    if (mascotte) {
+      gsap.from(mascotte, { scale: 0.8, opacity: 0, duration: 1, ease: 'back.out(1.5)', delay: 0.3 });
+      gsap.to(mascotte, { y: -8, duration: 2.5, ease: 'sine.inOut', repeat: -1, yoyo: true, delay: 1.5 });
+    }
+
     // Header nav links stagger
     var navLinks = document.querySelectorAll('#sticky-header nav a');
     if (navLinks.length) {
@@ -65,44 +72,6 @@
         y: 30, opacity: 0, duration: 0.5, ease: 'back.out(1.5)'
       });
     });
-
-    // --- Floating Elements ---
-    var container = document.getElementById('floating-elements');
-    if (!container) return;
-
-    var svgs = [
-      'img/floating/pizza-slice.svg',
-      'img/floating/basil-leaf.svg',
-      'img/floating/tomato.svg',
-      'img/floating/mushroom.svg',
-      'img/floating/cheese.svg'
-    ];
-
-    var count = window.innerWidth >= 768 ? 6 : 3;
-
-    for (var i = 0; i < count; i++) {
-      var img = document.createElement('img');
-      img.src = svgs[i % svgs.length];
-      img.alt = '';
-      img.style.position = 'absolute';
-      img.style.width = (30 + Math.random() * 30) + 'px';
-      img.style.opacity = '0.15';
-      img.style.left = Math.random() * 100 + '%';
-      img.style.top = Math.random() * 100 + '%';
-      container.appendChild(img);
-
-      // Gentle infinite drift
-      gsap.to(img, {
-        y: 'random(-80, 80)',
-        x: 'random(-40, 40)',
-        rotation: 'random(-30, 30)',
-        duration: 'random(6, 12)',
-        ease: 'sine.inOut',
-        repeat: -1,
-        yoyo: true,
-        delay: Math.random() * 3
-      });
-    }
 
     // --- Card Hover Effects ---
     document.querySelectorAll('.product-card').forEach(function (card) {

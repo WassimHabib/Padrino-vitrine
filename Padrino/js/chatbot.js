@@ -214,7 +214,7 @@
   chatBox.id = 'padrino-chat';
   chatBox.innerHTML = '\
 <div id="padrino-chat-head">\
-<img src="img/about/logo-bw.png" alt="Padrino">\
+<img src="img/about/logo-padrino-sm.png" alt="Padrino">\
 <div class="info"><div class="name">Padrino Conseiller</div><div class="status">En ligne — Besoin d\'un conseil ?</div></div>\
 <button class="close" aria-label="Fermer">&times;</button>\
 </div>\

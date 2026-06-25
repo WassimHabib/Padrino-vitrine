@@ -1,4 +1,52 @@
+# robots.txt - Le Padrino (lepadrino.fr)
+
+# --- Robots classiques (moteurs de recherche) ---
 User-agent: *
 Allow: /
 
+# --- Robots IA / moteurs génératifs (ChatGPT, etc.) ---
+# OpenAI (ChatGPT)
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Google (AI Overviews / Gemini)
+User-agent: Google-Extended
+Allow: /
+
+# Microsoft Copilot / Bing
+User-agent: Bingbot
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# Anthropic (Claude)
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+# Apple Intelligence
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Common Crawl (corpus d'entraînement de nombreuses IA)
+User-agent: CCBot
+Allow: /
+
+# --- Ressources pour les IA et moteurs ---
 Sitemap: https://www.lepadrino.fr/sitemap.xml

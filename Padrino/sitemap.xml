@@ -1,24 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <!-- Priority 1.00 -->
-  <url><loc>https://www.lepadrino.fr/</loc><lastmod>2026-03-18</lastmod><priority>1.00</priority></url>
+  <url><loc>https://www.lepadrino.fr/</loc><lastmod>2026-06-25</lastmod><priority>1.00</priority></url>
+  <!-- Priority 0.90 -->
+  <url><loc>https://www.lepadrino.fr/menu.html</loc><lastmod>2026-06-25</lastmod><priority>0.90</priority></url>
   <!-- Priority 0.80 - menu pages -->
-  <url><loc>https://www.lepadrino.fr/pizza.html</loc><lastmod>2026-03-18</lastmod><priority>0.80</priority></url>
-  <url><loc>https://www.lepadrino.fr/pasta.html</loc><lastmod>2026-03-18</lastmod><priority>0.80</priority></url>
-  <url><loc>https://www.lepadrino.fr/texmex.html</loc><lastmod>2026-03-18</lastmod><priority>0.80</priority></url>
-  <url><loc>https://www.lepadrino.fr/salades.html</loc><lastmod>2026-03-18</lastmod><priority>0.80</priority></url>
-  <url><loc>https://www.lepadrino.fr/dessert.html</loc><lastmod>2026-03-18</lastmod><priority>0.80</priority></url>
-  <url><loc>https://www.lepadrino.fr/menu.html</loc><lastmod>2026-03-18</lastmod><priority>0.90</priority></url>
+  <url><loc>https://www.lepadrino.fr/pizza.html</loc><lastmod>2026-06-25</lastmod><priority>0.80</priority></url>
+  <url><loc>https://www.lepadrino.fr/pasta.html</loc><lastmod>2026-06-25</lastmod><priority>0.80</priority></url>
+  <url><loc>https://www.lepadrino.fr/texmex.html</loc><lastmod>2026-06-25</lastmod><priority>0.80</priority></url>
+  <url><loc>https://www.lepadrino.fr/salades.html</loc><lastmod>2026-06-25</lastmod><priority>0.80</priority></url>
+  <url><loc>https://www.lepadrino.fr/dessert.html</loc><lastmod>2026-06-25</lastmod><priority>0.80</priority></url>
+  <!-- Priority 0.70 -->
+  <url><loc>https://www.lepadrino.fr/faq.html</loc><lastmod>2026-06-25</lastmod><priority>0.70</priority></url>
+  <url><loc>https://www.lepadrino.fr/livraison-pizza-le-blanc-mesnil.html</loc><lastmod>2026-06-25</lastmod><priority>0.70</priority></url>
   <!-- Priority 0.60 -->
-  <url><loc>https://www.lepadrino.fr/offres.html</loc><lastmod>2026-03-18</lastmod><priority>0.60</priority></url>
-  <url><loc>https://www.lepadrino.fr/commande.html</loc><lastmod>2026-03-18</lastmod><priority>0.60</priority></url>
-  <url><loc>https://www.lepadrino.fr/pizzeria-villepinte.html</loc><lastmod>2026-03-18</lastmod><priority>0.60</priority></url>
-  <url><loc>https://www.lepadrino.fr/pizzeria-drancy.html</loc><lastmod>2026-03-18</lastmod><priority>0.60</priority></url>
-  <url><loc>https://www.lepadrino.fr/pizzeria-aulnay-sous-bois.html</loc><lastmod>2026-03-18</lastmod><priority>0.60</priority></url>
-  <url><loc>https://www.lepadrino.fr/pizzeria-Sevran.html</loc><lastmod>2026-03-18</lastmod><priority>0.60</priority></url>
-  <url><loc>https://www.lepadrino.fr/pizzeria-dugny.html</loc><lastmod>2026-03-19</lastmod><priority>0.60</priority></url>
-  <url><loc>https://www.lepadrino.fr/pizzeria-le-bourget.html</loc><lastmod>2026-03-19</lastmod><priority>0.60</priority></url>
-  <url><loc>https://www.lepadrino.fr/faq.html</loc><lastmod>2026-03-19</lastmod><priority>0.70</priority></url>
+  <url><loc>https://www.lepadrino.fr/offres.html</loc><lastmod>2026-06-25</lastmod><priority>0.60</priority></url>
+  <url><loc>https://www.lepadrino.fr/commande.html</loc><lastmod>2026-06-25</lastmod><priority>0.60</priority></url>
+  <url><loc>https://www.lepadrino.fr/pizzeria-villepinte.html</loc><lastmod>2026-06-25</lastmod><priority>0.60</priority></url>
+  <url><loc>https://www.lepadrino.fr/pizzeria-drancy.html</loc><lastmod>2026-06-25</lastmod><priority>0.60</priority></url>
+  <url><loc>https://www.lepadrino.fr/pizzeria-aulnay-sous-bois.html</loc><lastmod>2026-06-25</lastmod><priority>0.60</priority></url>
+  <url><loc>https://www.lepadrino.fr/pizzeria-Sevran.html</loc><lastmod>2026-06-25</lastmod><priority>0.60</priority></url>
+  <url><loc>https://www.lepadrino.fr/pizzeria-dugny.html</loc><lastmod>2026-06-25</lastmod><priority>0.60</priority></url>
+  <url><loc>https://www.lepadrino.fr/pizzeria-le-bourget.html</loc><lastmod>2026-06-25</lastmod><priority>0.60</priority></url>
   <!-- Priority 0.30 -->
-  <url><loc>https://www.lepadrino.fr/mention-legale.html</loc><lastmod>2026-03-18</lastmod><priority>0.30</priority></url>
+  <url><loc>https://www.lepadrino.fr/mention-legale.html</loc><lastmod>2026-06-25</lastmod><priority>0.30</priority></url>
+
+  <!-- ====== Pages EN (English) ====== -->
+  <url><loc>https://www.lepadrino.fr/en/index.html</loc><lastmod>2026-06-25</lastmod><priority>0.70</priority></url>
+  <url><loc>https://www.lepadrino.fr/en/menu.html</loc><lastmod>2026-06-25</lastmod><priority>0.60</priority></url>
+  <url><loc>https://www.lepadrino.fr/en/pizza.html</loc><lastmod>2026-06-25</lastmod><priority>0.50</priority></url>
+  <url><loc>https://www.lepadrino.fr/en/pasta.html</loc><lastmod>2026-06-25</lastmod><priority>0.50</priority></url>
+  <url><loc>https://www.lepadrino.fr/en/texmex.html</loc><lastmod>2026-06-25</lastmod><priority>0.50</priority></url>
+  <url><loc>https://www.lepadrino.fr/en/salades.html</loc><lastmod>2026-06-25</lastmod><priority>0.50</priority></url>
+  <url><loc>https://www.lepadrino.fr/en/dessert.html</loc><lastmod>2026-06-25</lastmod><priority>0.50</priority></url>
+  <url><loc>https://www.lepadrino.fr/en/offres.html</loc><lastmod>2026-06-25</lastmod><priority>0.50</priority></url>
+  <url><loc>https://www.lepadrino.fr/en/commande.html</loc><lastmod>2026-06-25</lastmod><priority>0.50</priority></url>
+  <url><loc>https://www.lepadrino.fr/en/faq.html</loc><lastmod>2026-06-25</lastmod><priority>0.50</priority></url>
+  <url><loc>https://www.lepadrino.fr/en/pizzeria-villepinte.html</loc><lastmod>2026-06-25</lastmod><priority>0.50</priority></url>
+  <url><loc>https://www.lepadrino.fr/en/pizzeria-drancy.html</loc><lastmod>2026-06-25</lastmod><priority>0.50</priority></url>
+  <url><loc>https://www.lepadrino.fr/en/pizzeria-aulnay-sous-bois.html</loc><lastmod>2026-06-25</lastmod><priority>0.50</priority></url>
+  <url><loc>https://www.lepadrino.fr/en/pizzeria-Sevran.html</loc><lastmod>2026-06-25</lastmod><priority>0.50</priority></url>
+  <url><loc>https://www.lepadrino.fr/en/pizzeria-dugny.html</loc><lastmod>2026-06-25</lastmod><priority>0.50</priority></url>
+  <url><loc>https://www.lepadrino.fr/en/pizzeria-le-bourget.html</loc><lastmod>2026-06-25</lastmod><priority>0.50</priority></url>
+  <url><loc>https://www.lepadrino.fr/en/mention-legale.html</loc><lastmod>2026-06-25</lastmod><priority>0.20</priority></url>
 </urlset>

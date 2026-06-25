@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 220" fill="none">
+  <!-- Pizza slice body -->
+  <g id="pizza-body">
+    <!-- Crust -->
+    <path d="M100 10 L185 190 Q100 210 15 190 Z" fill="#f5c542" stroke="#d4a030" stroke-width="2"/>
+    <!-- Sauce -->
+    <path d="M100 30 L170 180 Q100 195 30 180 Z" fill="#e53935"/>
+    <!-- Cheese bubbles -->
+    <ellipse cx="80" cy="100" rx="18" ry="14" fill="#ffd54f" opacity="0.8"/>
+    <ellipse cx="120" cy="90" rx="15" ry="12" fill="#ffd54f" opacity="0.7"/>
+    <ellipse cx="100" cy="140" rx="20" ry="14" fill="#ffd54f" opacity="0.8"/>
+    <ellipse cx="65" cy="145" rx="14" ry="10" fill="#ffd54f" opacity="0.7"/>
+    <ellipse cx="135" cy="140" rx="14" ry="10" fill="#ffd54f" opacity="0.7"/>
+    <!-- Pepperoni -->
+    <circle cx="75" cy="110" r="10" fill="#c62828"/>
+    <circle cx="115" cy="100" r="9" fill="#c62828"/>
+    <circle cx="95" cy="150" r="10" fill="#c62828"/>
+    <circle cx="130" cy="150" r="8" fill="#c62828"/>
+    <circle cx="60" cy="155" r="7" fill="#c62828"/>
+    <!-- Pepperoni shine -->
+    <circle cx="72" cy="107" r="3" fill="#e53935" opacity="0.5"/>
+    <circle cx="112" cy="97" r="2.5" fill="#e53935" opacity="0.5"/>
+    <circle cx="92" cy="147" r="3" fill="#e53935" opacity="0.5"/>
+    <!-- Basil leaves -->
+    <g transform="translate(90,120) rotate(-15)">
+      <ellipse cx="0" cy="0" rx="8" ry="14" fill="#43a047"/>
+      <line x1="0" y1="-10" x2="0" y2="10" stroke="#2e7d32" stroke-width="1"/>
+    </g>
+    <g transform="translate(120,130) rotate(20)">
+      <ellipse cx="0" cy="0" rx="6" ry="10" fill="#43a047"/>
+      <line x1="0" y1="-7" x2="0" y2="7" stroke="#2e7d32" stroke-width="1"/>
+    </g>
+  </g>
+  <!-- Face -->
+  <g id="pizza-face">
+    <!-- Eyes -->
+    <g id="left-eye">
+      <ellipse cx="75" cy="75" rx="12" ry="14" fill="white"/>
+      <circle cx="78" cy="76" r="7" fill="#1a1a1a"/>
+      <circle cx="80" cy="73" r="2.5" fill="white"/>
+    </g>
+    <g id="right-eye">
+      <ellipse cx="125" cy="75" rx="12" ry="14" fill="white"/>
+      <circle cx="122" cy="76" r="7" fill="#1a1a1a"/>
+      <circle cx="124" cy="73" r="2.5" fill="white"/>
+    </g>
+    <!-- Eyebrows -->
+    <path d="M60 60 Q75 50 88 58" stroke="#5b1212" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M112 58 Q125 50 140 60" stroke="#5b1212" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <!-- Big smile -->
+    <path d="M65 100 Q100 135 135 100" stroke="#1a1a1a" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+    <!-- Tongue -->
+    <ellipse cx="100" cy="112" rx="12" ry="8" fill="#e57373"/>
+    <!-- Cheeks (blush) -->
+    <circle cx="55" cy="95" r="10" fill="#ff8a80" opacity="0.4"/>
+    <circle cx="145" cy="95" r="10" fill="#ff8a80" opacity="0.4"/>
+  </g>
+  <!-- Left hand waving -->
+  <g id="left-hand" transform="translate(10,140)">
+    <ellipse cx="0" cy="0" rx="14" ry="10" fill="#f5c542" stroke="#d4a030" stroke-width="1.5"/>
+    <!-- Thumb up -->
+    <ellipse cx="-5" cy="-12" rx="5" ry="8" fill="#f5c542" stroke="#d4a030" stroke-width="1.5" transform="rotate(-20,-5,-12)"/>
+  </g>
+  <!-- Right hand with chef hat -->
+  <g id="right-hand" transform="translate(185,135)">
+    <ellipse cx="0" cy="0" rx="14" ry="10" fill="#f5c542" stroke="#d4a030" stroke-width="1.5"/>
+  </g>
+  <!-- Chef hat -->
+  <g id="chef-hat" transform="translate(100,10)">
+    <ellipse cx="0" cy="5" rx="35" ry="10" fill="white" stroke="#ddd" stroke-width="1"/>
+    <rect x="-28" y="-25" width="56" height="30" rx="5" fill="white" stroke="#ddd" stroke-width="1"/>
+    <ellipse cx="0" cy="-25" rx="28" ry="15" fill="white"/>
+    <ellipse cx="-12" cy="-32" rx="12" ry="12" fill="white"/>
+    <ellipse cx="12" cy="-32" rx="12" ry="12" fill="white"/>
+    <ellipse cx="0" cy="-38" rx="10" ry="10" fill="white"/>
+  </g>
+  <!-- Sparkles around -->
+  <g id="sparkles" fill="#ffc107">
+    <polygon points="20,40 23,30 26,40 36,43 26,46 23,56 20,46 10,43" opacity="0.8"/>
+    <polygon points="170,45 172,38 174,45 180,47 174,49 172,56 170,49 164,47" opacity="0.6" transform="scale(0.7) translate(80,20)"/>
+    <polygon points="45,20 47,14 49,20 54,22 49,24 47,30 45,24 40,22" opacity="0.7"/>
+  </g>
+  <!-- Steam/aroma lines -->
+  <g stroke="#ff6b35" stroke-width="2" fill="none" opacity="0.4" stroke-linecap="round">
+    <path d="M50,35 Q45,20 55,10"/>
+    <path d="M100,15 Q95,0 105,-8"/>
+    <path d="M145,38 Q150,22 140,12"/>
+  </g>
+</svg>
