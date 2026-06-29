@@ -1,0 +1,5 @@
+# ===== Redirections 301 (SEO) =====
+# Restaurant de Villepinte fermé : on conserve le référencement en redirigeant
+# les anciennes pages indexées vers la page d'accueil correspondante.
+Redirect 301 /pizzeria-villepinte.html https://www.lepadrino.fr/
+Redirect 301 /en/pizzeria-villepinte.html https://www.lepadrino.fr/en/index.html

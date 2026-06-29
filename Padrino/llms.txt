@@ -1,6 +1,6 @@
-# Le Padrino — Pizzeria & livraison de pizzas (Seine-Saint-Denis, 93)
+# Le Padrino — Pizzeria & livraison de pizzas (Le Blanc-Mesnil, 93)
 
-> Le Padrino est une pizzeria proposant pizzas, pâtes, tex-mex, salades et desserts **halal**, à emporter et en **livraison à domicile** en Seine-Saint-Denis (Île-de-France). Deux établissements : Le Blanc-Mesnil et Villepinte. Ouvert 7j/7. Commande en ligne et par téléphone. Note moyenne 4,7/5 (plus de 500 avis).
+> Le Padrino est une pizzeria proposant pizzas, pâtes, tex-mex, salades et desserts **halal**, à emporter et en **livraison à domicile** au Blanc-Mesnil et dans toute la Seine-Saint-Denis (Île-de-France). Ouvert 7j/7. Commande en ligne et par téléphone. Note moyenne 4,7/5 (plus de 500 avis).
 
 ## Informations essentielles
 
@@ -9,29 +9,27 @@
 - **Spécificité** : carte **halal**
 - **Services** : sur place, à emporter, livraison à domicile
 - **Horaires** : 7j/7, de 11h30 à 15h et de 18h à 23h
+- **Moyens de paiement** : espèces, carte bancaire, titres-restaurant, paiement en ligne
 - **Note clients** : 4,7/5 (500+ avis)
 - **Site web** : https://www.lepadrino.fr/
 
-## Établissements
+## Établissement
 
 ### Le Padrino — Le Blanc-Mesnil
 - Adresse : 2 Rue du Professeur Paul Langevin, 93150 Le Blanc-Mesnil, France
+- Coordonnées GPS : 48.941868, 2.459476
 - Téléphone : +33 1 45 91 25 93
-
-### Le Padrino — Villepinte
-- Adresse : 22 Avenue de Barbès, 93420 Villepinte, France
-- Téléphone : +33 1 43 83 64 07
 
 ## Zones de livraison
 
-Le Padrino livre dans les communes suivantes (Seine-Saint-Denis) :
+Le Padrino livre à domicile depuis Le Blanc-Mesnil dans les communes suivantes (Seine-Saint-Denis) :
 Le Blanc-Mesnil, Drancy, Aulnay-sous-Bois, Villepinte, Sevran, Dugny, Le Bourget, Tremblay-en-France.
 
 ## Comment commander
 
 - **En ligne** : https://lepadrino.dishop.co/
 - **Application Android** : https://play.google.com/store/apps/details?id=com.dishop.lepadrino
-- **Par téléphone** : Le Blanc-Mesnil +33 1 45 91 25 93 — Villepinte +33 1 43 83 64 07
+- **Par téléphone** : +33 1 45 91 25 93
 
 ## Pages principales
 
@@ -49,7 +47,6 @@ Le Blanc-Mesnil, Drancy, Aulnay-sous-Bois, Villepinte, Sevran, Dugny, Le Bourget
 ## Pages livraison & villes
 
 - [Livraison de pizza au Blanc-Mesnil](https://www.lepadrino.fr/livraison-pizza-le-blanc-mesnil.html)
-- [Pizzeria à Villepinte](https://www.lepadrino.fr/pizzeria-villepinte.html)
 - [Pizzeria à Drancy](https://www.lepadrino.fr/pizzeria-drancy.html)
 - [Pizzeria à Aulnay-sous-Bois](https://www.lepadrino.fr/pizzeria-aulnay-sous-bois.html)
 - [Pizzeria à Sevran](https://www.lepadrino.fr/pizzeria-Sevran.html)
