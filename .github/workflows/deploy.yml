@@ -1,15 +1,15 @@
-name: Déploiement FTP (lepadrino.fr)
+name: Déploiement SFTP (lepadrino.fr)
 
 # Déploie automatiquement le contenu du dossier Padrino/ vers l'hébergeur
-# à chaque push sur main. Peut aussi être lancé manuellement (onglet Actions).
+# en SFTP (chiffré, via SSH) à chaque push sur main.
+# Peut aussi être lancé manuellement (onglet Actions → Run workflow).
 on:
   push:
     branches: [ main ]
   workflow_dispatch:
 
-# Empêche deux déploiements simultanés (le dernier push gagne)
 concurrency:
-  group: ftp-deploy
+  group: sftp-deploy
   cancel-in-progress: true
 
 jobs:
@@ -19,29 +19,28 @@ jobs:
       - name: Récupérer le code
         uses: actions/checkout@v4
 
-      - name: Déployer par FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      - name: Déployer par SFTP (fichiers visibles)
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.5
         with:
-          # --- Identifiants (à définir dans GitHub → Settings → Secrets → Actions) ---
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
+          port: ${{ secrets.SFTP_PORT || 22 }}
+          # Contenu du site (dossier Padrino/)
+          local_path: './Padrino/*'
+          # Racine web sur le serveur (souvent /www/ chez OVH, /public_html/ en cPanel)
+          remote_path: ${{ secrets.FTP_SERVER_DIR || './' }}
+          sftp_only: true
 
-          # --- Dossiers ---
-          # On envoie uniquement le contenu du site (dossier Padrino/)
-          local-dir: ./Padrino/
-          # Racine web sur le serveur. Par défaut "./" (tu es déjà dans le web root).
-          # Si ton site est dans un sous-dossier (ex: /www/ ou /public_html/),
-          # crée un secret FTP_SERVER_DIR avec cette valeur (en finissant par /).
-          server-dir: ${{ secrets.FTP_SERVER_DIR || './' }}
-
-          # --- Protocole : ftps (sécurisé) par défaut. Mettre "ftp" si l'hébergeur
-          # ne supporte pas le FTPS (crée un secret FTP_PROTOCOL=ftp). ---
-          protocol: ${{ secrets.FTP_PROTOCOL || 'ftps' }}
-
-          # Ne pas téléverser les fichiers inutiles
-          exclude: |
-            **/.git*
-            **/.git*/**
-            **/css/input.css
-            **/README.md
+      - name: Déployer les fichiers cachés (.htaccess)
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          port: ${{ secrets.SFTP_PORT || 22 }}
+          # Les fichiers commençant par un point (ex. .htaccess) ne sont pas pris
+          # par le glob '*' ci-dessus, on les envoie séparément.
+          local_path: './Padrino/.htaccess'
+          remote_path: ${{ secrets.FTP_SERVER_DIR || './' }}
+          sftp_only: true
