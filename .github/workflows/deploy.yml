@@ -1,0 +1,47 @@
+name: Déploiement FTP (lepadrino.fr)
+
+# Déploie automatiquement le contenu du dossier Padrino/ vers l'hébergeur
+# à chaque push sur main. Peut aussi être lancé manuellement (onglet Actions).
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+# Empêche deux déploiements simultanés (le dernier push gagne)
+concurrency:
+  group: ftp-deploy
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupérer le code
+        uses: actions/checkout@v4
+
+      - name: Déployer par FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          # --- Identifiants (à définir dans GitHub → Settings → Secrets → Actions) ---
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+
+          # --- Dossiers ---
+          # On envoie uniquement le contenu du site (dossier Padrino/)
+          local-dir: ./Padrino/
+          # Racine web sur le serveur. Par défaut "./" (tu es déjà dans le web root).
+          # Si ton site est dans un sous-dossier (ex: /www/ ou /public_html/),
+          # crée un secret FTP_SERVER_DIR avec cette valeur (en finissant par /).
+          server-dir: ${{ secrets.FTP_SERVER_DIR || './' }}
+
+          # --- Protocole : ftps (sécurisé) par défaut. Mettre "ftp" si l'hébergeur
+          # ne supporte pas le FTPS (crée un secret FTP_PROTOCOL=ftp). ---
+          protocol: ${{ secrets.FTP_PROTOCOL || 'ftps' }}
+
+          # Ne pas téléverser les fichiers inutiles
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/css/input.css
+            **/README.md
